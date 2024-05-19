@@ -1,0 +1,171 @@
+/* Profile Container */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 180px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .detail-item {
+    margin-bottom: 10px; 
+  }
+  
+  .detail-item label {
+    font-weight: bold;
+    margin-right: 10px; 
+  }
+  
+  .detail-item span {
+    word-break: break-all; 
+  }
+  
+  .upload-cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .upload-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .upload-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* General Container Styles */
+  .jobs-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+  }
+  
+  /* Navigation Container */
+  .navigation-container {
+    width: 15vw;
+    background: var(--nav-color);
+    padding: 60px 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Inner Container */
+  .inner-container {
+    background-color: rgb(255, 255, 255);
+    height: 75vh;
+    width: 45%;
+    border-radius: 26px;
+    margin-top: 20px;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    padding: 20px; 
+  }
+  
+  /* Logo and Icons */
+  .logo-icon {
+    width: 68px;
+    height: 76px;
+    margin-bottom: 20px;
+  }
+  
+  .nav-icon,
+  .nav-icon-dash {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .nav-icon-dash {
+    filter: invert(100%);
+  }
+  
+  /* Headings */
+  h2 {
+    margin-bottom: 40px;
+  }
+  
+  /* Navigation Option Styles */
+  .nav-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    height: 33px;
+    color: white;
+    font-size: 20px;
+    padding: 8px 12px;
+  }
+  
+  .nav-option:hover,
+  .selected {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    width: max-content;
+  }
+  
+  .nav-option:hover .nav-icon,
+  .selected .nav-icon {
+    filter: invert(100%);
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .navigation-container {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .nav-option {
+      padding: 8px 12px;
+    }
+  
+    .selected {
+      background-color: white;
+      color: black;
+      border-radius: 20px;
+      padding: 10px 12px;
+      width: max-content;
+    }
+  
+    .main-content {
+      height: 70vh;
+      overflow-y: auto;
+    }
+  }
+  

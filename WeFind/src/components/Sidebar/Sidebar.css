@@ -1,0 +1,36 @@
+.logo-icon {
+    width: 70.98px;
+    height: 90.85px;
+    top: 118.17px;
+    left: 984px;
+    transform: rotate(-15.4deg);
+    margin-right: -27px;
+    margin-bottom: 30px;
+
+}
+.h2{
+    font-weight: bolder;
+    font-size: 38px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Sidebar.css */
+
+/* Add the following CSS rules */
+
+.sidebar-nav-link {
+    font-size: 1.2rem; /* Increase font size */
+    font-weight: bold; /* Make the text bolder */
+  }
+  
+  .sidebar-nav-link:hover {
+    background-color: #333; /* Adjust the hover background color */
+  }
+  
+  .sidebar-nav-link.active {
+    background-color: #555; /* Adjust the active background color */
+  }
+  
