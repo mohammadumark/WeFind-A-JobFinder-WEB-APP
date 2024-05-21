@@ -4,6 +4,7 @@ import AppliedJobCard from './AppliedJobCard';
 import './JobsScreen.css'; // Assuming it shares the same styles
 import DefaultLayout from '../layout/DefaultLayout';
 import CompanyCard from './CompanyCard';
+import Breadcrumb from './Breadcrumbs/Breadcrumb';
 
 const Companies = () => {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -56,6 +57,7 @@ const Companies = () => {
 
   return (
     <DefaultLayout>
+      <Breadcrumb pageName="Companies" />
       <div className="container">
         <div
           className="inner-container"

@@ -3,11 +3,11 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 
 import Loader from './common/Loader';
 import PageTitle from './components/PageTitle';
-import SignIn from './pages/Authentication/SignIn';
-import SignUp from './pages/Authentication/SignUp';
-import Profile from './components/ProfileScreen';
+import SignIn from './components/SignIn';
+import SignUp from './components/SignUp';
+
 import Settings from './pages/Settings';
-import Alerts from './pages/UiElements/Alerts';
+
 import Buttons from './pages/UiElements/Buttons';
 import JobsScreen from './components/JobScreen';
 import AppliedJob from './components/AppliedJob';
@@ -75,17 +75,8 @@ function App() {
           path="/settings"
           element={
             <>
-              <PageTitle title="Settings | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Settings" />
               <Settings />
-            </>
-          }
-        />
-        <Route
-          path="/ui/alerts"
-          element={
-            <>
-              <PageTitle title="Alerts" />
-              <Alerts />
             </>
           }
         />
@@ -99,19 +90,19 @@ function App() {
           }
         />
         <Route
-          path="/auth/signin"
+          path="/signin"
           element={
             <>
-              <PageTitle title="Signin | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Signin" />
               <SignIn />
             </>
           }
         />
         <Route
-          path="/auth/signup"
+          path="/signup"
           element={
             <>
-              <PageTitle title="Signup | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <PageTitle title="Signup" />
               <SignUp />
             </>
           }

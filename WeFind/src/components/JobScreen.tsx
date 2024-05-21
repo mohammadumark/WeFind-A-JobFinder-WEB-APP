@@ -47,6 +47,7 @@ const JobsScreen = () => {
 
   return (
     <DefaultLayout>
+      <Breadcrumb pageName="Jobs" />
       <div className="container">
         <div
           className="inner-container"

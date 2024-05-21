@@ -35,7 +35,9 @@
   .apply-button {
     background-color: var(--primary-color);
     color: white;
+    font-weight: bolder;
     padding: 10px 15px;
+    width: 170px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -43,6 +45,6 @@
   }
   
   .apply-button:hover {
-    background-color: darken(var(--primary-color), 10%);
+    background-color: rgb(1, 30, 163);
   }
   
